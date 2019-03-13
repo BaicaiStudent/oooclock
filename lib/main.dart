@@ -6,7 +6,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'r=nggtest ',
+      title: 'r=nggtes',
       home: new Container(
         color: Colors.blue,
         child: SafeArea(
