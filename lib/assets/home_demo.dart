@@ -1,32 +1,16 @@
 import 'package:flutter/material.dart';
-// import './assets/home_demo.dart';
-import './assets/drawer_demo.dart';
-import './assets/bottom_navigation_bar.dart';
-import './assets/table_view_demo.dart';
+import './drawer_demo.dart';
 
-void main() => runApp(MyApp());
+class HomeDemo extends StatelessWidget {
+  final Widget child;
 
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: new Home(),
-      theme: ThemeData(
-        primaryColor: Colors.blue,
-        highlightColor: Color.fromRGBO(253, 233, 78, 0.5),
-        splashColor: Color.fromRGBO(253, 233, 78, 0.5),
-      ),
-    );
-  }
-}
+  HomeDemo({Key key, this.child}) : super(key: key);
 
-class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 3,
-      child: Scaffold(
+        length: 3,
+        child: Scaffold(
           appBar: AppBar(
             leading: IconButton(
               icon: Icon(Icons.search),
@@ -35,7 +19,8 @@ class Home extends StatelessWidget {
             ),
             title: Text('oooclock'),
             centerTitle: true,
-            actions: <Widget>[],
+            actions: <Widget>[
+            ],
             elevation: 0.0,
             bottom: TabBar(
               unselectedLabelColor: Colors.black38,
@@ -54,9 +39,5 @@ class Home extends StatelessWidget {
               ],
             ),
           ),
-          body: TableViewDemo(),
-          endDrawer: DrawerDemo(),
-          bottomNavigationBar: BottomNavigationBarDemo()),
-    );
   }
 }
