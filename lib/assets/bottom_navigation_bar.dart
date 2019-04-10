@@ -18,25 +18,29 @@ class _BottomNavigationBarDemoState extends State<BottomNavigationBarDemo> {
     });
   }
 
+  // final TextStyle _textStyle = TextStyle(
+  //   fontSize: 20.0,
+  // );
+
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
       currentIndex: _currentIndex,
       onTap: _onTapHandler,
       fixedColor: Colors.red,
-      iconSize: 20.0,
+      iconSize: 25.0,
       items: [
         BottomNavigationBarItem(
-          icon: Text('8'),
-          title: Text('小时'),
+          icon: Icon(null),
+          title: Text('XXX'),
         ),
         BottomNavigationBarItem(
-          icon: Text('14'),
-          title: Text('小时'),
+          icon: Icon(null),
+          title: Text('XXX'),
         ),
         BottomNavigationBarItem(
-          icon: Icon(Icons.check_circle),
-          title: Text('确定'),
+          icon: Icon(null),
+          title: Text('XXX'),
         ),
       ],
     );

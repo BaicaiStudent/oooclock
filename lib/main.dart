@@ -22,41 +22,43 @@ class MyApp extends StatelessWidget {
 }
 
 class Home extends StatelessWidget {
-@override
+  @override
   Widget build(BuildContext context) {
+    var bottomNavigationBarDemo = BottomNavigationBarDemo();
     return DefaultTabController(
       length: 3,
       child: Scaffold(
-        appBar: AppBar(
-          leading: IconButton(
-            icon: Icon(Icons.search),
-            tooltip: 'search',
-            onPressed: () => debugPrint('search-pr'),
-          ),
-          title: Text('oooclock'),
-          centerTitle: true,
-          actions: <Widget>[],
-          elevation: 0.0,
-          bottom: TabBar(
-            unselectedLabelColor: Colors.black38,
-            indicatorColor: Colors.yellowAccent,
-            indicatorSize: TabBarIndicatorSize.label,
-            tabs: <Widget>[
-              Tab(
-                icon: Icon(Icons.calendar_today),
+          appBar: AppBar(
+              leading: IconButton(
+                icon: Icon(Icons.search),
+                tooltip: 'search',
+                onPressed: () => debugPrint('search-pr'),
               ),
-              Tab(
-                icon: Icon(Icons.view_headline,),
-              ),
-              Tab(
-                icon: Icon(Icons.done_all),
-              )
-            ],
-          )),
-        body: TableViewDemo(),
-          endDrawer: DrawerDemo(),
-          bottomNavigationBar: BottomNavigationBarDemo()),
-
+              title: Text('oooclock'),
+              centerTitle: true,
+              actions: <Widget>[],
+              elevation: 0.0,
+              bottom: TabBar(
+                unselectedLabelColor: Colors.black38,
+                indicatorColor: Colors.yellowAccent,
+                indicatorSize: TabBarIndicatorSize.label,
+                tabs: <Widget>[
+                  Tab(
+                    icon: Icon(Icons.calendar_today),
+                  ),
+                  Tab(
+                    icon: Icon(
+                      Icons.view_headline,
+                    ),
+                  ),
+                  Tab(
+                    icon: Icon(Icons.done_all),
+                  )
+                ],
+              )),
+          body: TableViewDemo(), //三选项
+          endDrawer: DrawerDemo(), //侧边栏
+          bottomNavigationBar: bottomNavigationBarDemo), //底栏
     );
   }
 }
