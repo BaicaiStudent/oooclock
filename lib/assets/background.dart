@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart'; //
+import 'package:flutter/material.dart'; // 蓝黄背景色
 
 class Background extends StatelessWidget {
   final Widget child;

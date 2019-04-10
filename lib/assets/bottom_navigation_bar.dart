@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart'; //底栏菜单
 
 class BottomNavigationBarDemo extends StatefulWidget {
   // @override

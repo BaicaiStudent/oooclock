@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart'; //
+import 'package:flutter/material.dart'; //时间设定
 
 class ClockSetting extends StatelessWidget {
   @override
