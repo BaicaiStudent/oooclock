@@ -1,12 +1,10 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart'; //
 
 class Calendar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-   return Center(
-      child:
-      Text('这里是日历'),
-
+    return Center(
+      child: Text('这里是日历'),
     );
   }
 }

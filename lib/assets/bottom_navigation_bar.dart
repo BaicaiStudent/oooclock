@@ -14,7 +14,7 @@ class _BottomNavigationBarDemoState extends State<BottomNavigationBarDemo> {
   int _currentIndex = 0;
   void _onTapHandler(int index) {
     setState(() {
-      _currentIndex = index
+      _currentIndex = index;
     });
   }
 
