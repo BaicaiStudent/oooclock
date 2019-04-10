@@ -13,7 +13,7 @@ class DrawerDemo extends StatelessWidget {
         children: <Widget>[
           UserAccountsDrawerHeader(
             accountName: Text(
-              '这是你的闹钟',
+              '这是一个闹钟',
               textAlign: TextAlign.center,
               style: new TextStyle(
                 fontSize: 20.0,
@@ -62,3 +62,5 @@ class DrawerDemo extends StatelessWidget {
     );
   }
 }
+
+//此部件为侧边栏

@@ -24,6 +24,7 @@ class _BottomNavigationBarDemoState extends State<BottomNavigationBarDemo> {
       currentIndex: _currentIndex,
       onTap: _onTapHandler,
       fixedColor: Colors.red,
+      iconSize: 20.0,
       items: [
         BottomNavigationBarItem(
           icon: Text('8'),

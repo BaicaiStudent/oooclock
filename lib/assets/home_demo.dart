@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import './drawer_demo.dart';
 
 class HomeDemo extends StatelessWidget {
   final Widget child;
@@ -30,7 +29,7 @@ class HomeDemo extends StatelessWidget {
                 icon: Icon(Icons.calendar_today),
               ),
               Tab(
-                icon: Icon(Icons.done),
+                icon: Icon(Icons.view_headline,),
               ),
               Tab(
                 icon: Icon(Icons.done_all),
