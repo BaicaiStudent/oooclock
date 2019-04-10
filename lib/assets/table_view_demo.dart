@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart'; //功能菜单栏
 import "../assets/todo_demo.dart";
 import '../assets/clock_settings.dart';
 import '../assets/calendar_demo.dart';
@@ -9,7 +9,7 @@ class TableViewDemo extends StatelessWidget {
     return TabBarView(
       children: <Widget>[
         Calendar(), //这里是日历
-        ToDo(),  //这里是待办事项
+        ToDo(), //这里是待办事项
         ClockSetting(), //这里是时间设定
       ],
     );

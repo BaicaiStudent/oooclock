@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import './assets/drawer_demo.dart'; // 侧边栏
 import './assets/bottom_navigation_bar.dart'; //底栏菜单
-import './assets/table_view_demo.dart'; //功能选项
+import './assets/table_view_demo.dart'; //功能菜单栏
 // import './assets/home_demo.dart';
 
 void main() => runApp(MyApp());
