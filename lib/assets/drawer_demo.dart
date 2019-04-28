@@ -20,6 +20,7 @@ class DrawerDemo extends StatelessWidget {
                 // color: Colors.grey,
               ),
             ),
+            accountEmail: null,
           ),
           ListTile(
             title: Text(
